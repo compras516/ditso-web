@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ditsö · Bingsu Tropical en vivo para tu evento</title>
+<meta name="description" content="Ditsö lleva el carrito de bingsu a tu evento en Costa Rica: postre coreano de nieve de leche, preparado en vivo con sabores tropicales. Bodas, empresas, colegios y cumpleaños.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#143A2E;--tinta:#163F31;--crema:#F3ECE0;--gris:#CFC6B6;--dorado:#C9AB72;--dorado2:#9C7D45;--mango:#ECA034;--gorra:#1E4D35}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--tinta);background:var(--crema);line-height:1.6;font-size:17px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1120px,90vw);margin:0 auto}
+.tag{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--dorado2)}
+h1,h2{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.08}
+h1 em,h2 em{color:var(--dorado);font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--gorra);color:var(--crema);border:1.5px solid var(--dorado);border-radius:999px;padding:.85em 1.6em;text-decoration:none;font-weight:500;letter-spacing:.02em;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--verde)}
+/* header */
+header{position:absolute;inset:0 0 auto;z-index:5;padding:22px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'DM Serif Display',serif;font-size:1.9rem;color:var(--crema);text-decoration:none}
+.logo span{color:var(--dorado);font-style:italic;font-size:1rem;margin-left:.4em;font-family:Jost;letter-spacing:.18em;text-transform:uppercase;font-style:normal}
+header .btn{padding:.6em 1.2em;font-size:.9rem}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;background:var(--verde);color:var(--crema)}
+.hero .txt{display:flex;flex-direction:column;justify-content:center;padding:120px 6vw 80px max(5vw,calc((100vw - 1120px)/2))}
+.hero .ph{position:relative;overflow:hidden}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .ph::before{content:"";position:absolute;z-index:2;top:0;bottom:0;left:-1px;width:42px;background:
+ radial-gradient(22px 40px at 0 40px,var(--verde) 98%,transparent) 0 0/42px 80px repeat-y}
+.hero h1{font-size:clamp(2.6rem,5vw,4.6rem);max-width:12ch}
+.hero p{max-width:44ch;margin:18px 0 30px;color:var(--gris);font-size:1.12rem}
+.hero .rule{width:120px;height:2px;background:var(--dorado);margin:22px 0 4px}
+@media (max-width:860px){.hero{grid-template-columns:1fr;min-height:auto}.hero .ph{height:52vh;order:-1}.hero .ph::before{display:none}
+ .hero .ph::after{content:"";position:absolute;z-index:2;left:0;right:0;bottom:-1px;height:30px;background:radial-gradient(40px 22px at 40px 30px,var(--verde) 98%,transparent) 0 0/80px 30px repeat-x}
+ .hero .txt{padding:40px 5vw 64px}}
+/* secciones */
+section{padding:96px 0}
+.grid2{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.foto{border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(20,58,46,.5)}
+.foto img{width:100%;aspect-ratio:4/5;object-fit:cover}
+h2{font-size:clamp(2rem,4vw,3.1rem);margin:12px 0 20px}
+.lead{font-size:1.1rem;max-width:52ch}
+.verde{background:var(--verde);color:var(--crema)}
+.verde .tag{color:var(--dorado)}
+.verde p{color:var(--gris)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.card{border:1px solid rgba(201,171,114,.45);border-radius:22px;padding:28px}
+.card .ic{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--dorado);display:grid;place-items:center;margin-bottom:16px;color:var(--dorado);font-size:1.3rem}
+.card h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.45rem;color:var(--crema);margin-bottom:6px}
+.sabores{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.sabor{background:#fff;border-radius:22px;padding:26px;border-top:5px solid var(--c)}
+.sabor h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.6rem}
+.extra{margin-top:22px;color:var(--dorado2)}
+.eventos{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.eventos span{border:1px solid var(--dorado2);border-radius:999px;padding:.4em 1em;font-size:.95rem}
+.cta{text-align:center}
+.cta h2{max-width:18ch;margin-inline:auto}
+.cta p{margin:0 auto 30px;max-width:44ch}
+footer{background:#0f2e24;color:var(--gris);padding:44px 0;font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer strong{color:var(--crema);font-weight:500}
+footer a{color:var(--dorado);text-decoration:none}
+@media (max-width:860px){.grid2,.cards,.sabores{grid-template-columns:1fr}.grid2{gap:36px}section{padding:72px 0}header .btn{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">Ditsö<span>Bingsu Tropical</span></a><a class="btn" href="https://wa.me/50687595546">Reservar por WhatsApp</a></div></header>
+
+<div class="hero">
+  <div class="txt">
+    <p class="tag">Bingsu coreano · versión tropical</p>
+    <h1>Tú pones la fiesta. <em>Nosotros, la nieve.</em></h1><div class="rule"></div>
+    <p>Llevamos nuestro carrito a tu evento y preparamos el bingsu en vivo: nieve de leche suave como algodón, con fruta, salsas y toppings, frente a tus invitados.</p>
+    <div><a class="btn" href="https://wa.me/50687595546?text=Hola%20Dits%C3%B6%2C%20quiero%20cotizar%20para%20mi%20evento">Cotizar mi evento →</a></div>
+  </div>
+  <div class="ph"><img src="sabores.jpg" alt="Tres bingsus Ditsö: Oreo, mango y fresa"></div>
+</div>
+
+<section><div class="wrap grid2">
+  <div class="foto"><img src="carrito.jpg" alt="Carrito de bingsu Ditsö con pantalla personalizable" loading="lazy"></div>
+  <div>
+    <p class="tag">¿Qué es Ditsö?</p>
+    <h2>Una semilla <em>tica</em> con alma coreana</h2>
+    <p class="lead"><em>Ditsö</em> significa "semilla, origen" en bribri. Nuestro bingsu es el postre coreano de nieve de leche raspada, llevado a los sabores de Costa Rica. Somos un bingsu bar móvil: el postre y el espectáculo llegan juntos a tu evento.</p>
+    <div class="eventos"><span>Bodas</span><span>Fiestas de empresa</span><span>Colegios</span><span>Cumpleaños</span><span>Quinceaños</span><span>Ferias</span></div>
+  </div>
+</div></section>
+
+<section class="verde"><div class="wrap">
+  <p class="tag">La experiencia</p>
+  <h2>Más que un postre, <em>un momento</em></h2>
+  <p class="lead">Cada bingsu se raspa y se arma al momento. Tus invitados ven caer la nieve, escogen su sabor y se llevan algo que no han probado en ninguna otra fiesta.</p>
+  <div class="cards">
+    <div class="card"><div class="ic">❄</div><h3>En vivo</h3><p>Preparamos cada bingsu frente a tus invitados, con nuestro carrito y personal.</p></div>
+    <div class="card"><div class="ic">▣</div><h3>Pantalla personalizada</h3><p>El carrito tiene una pantalla que adaptamos a tu evento: nombres, logo de tu empresa o la temática de la fiesta.</p></div>
+    <div class="card"><div class="ic">✦</div><h3>A tu medida</h3><p>Tamaño regular o mini, decoración temática del carrito y stickers personalizados en los vasos.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap grid2">
+  <div>
+    <p class="tag">Sabores</p>
+    <h2>Los <em>favoritos</em> de la casa</h2>
+    <div class="sabores">
+      <div class="sabor" style="--c:var(--mango)"><h3>Mango</h3><p>Mango fresco, jalea de mango y crema.</p></div>
+      <div class="sabor" style="--c:#E8829B"><h3>Churchill</h3><p>El clásico tico, en versión nieve.</p></div>
+      <div class="sabor" style="--c:#3b2a22"><h3>Oreo</h3><p>Galleta, chocolate y crema.</p></div>
+    </div>
+    <p class="extra">También a pedido: fresa, cas, piña colada, maracuyá, White Rabbit y más.</p>
+  </div>
+  <div class="foto"><img src="mango.jpg" alt="Bingsu de mango Ditsö" loading="lazy"></div>
+</div></section>
+
+<section class="cta verde"><div class="wrap">
+  <p class="tag">Reservas</p>
+  <h2>¿Hacemos <em>nieve</em> en tu próximo evento?</h2>
+  <p>Escríbenos con la fecha, el lugar y la cantidad aproximada de invitados, y te enviamos la propuesta.</p>
+  <a class="btn" href="https://wa.me/50687595546?text=Hola%20Dits%C3%B6%2C%20quiero%20cotizar%20para%20mi%20evento">WhatsApp 8759-5546</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div><strong>Ditsö – Bingsu Tropical</strong><br>Emprendimiento de <strong>Carlos Daniel Sánchez Camacho</strong><br>San José, Costa Rica</div>
+  <div>WhatsApp: <a href="https://wa.me/50687595546">+506 8759-5546</a><br>Correo: <a href="mailto:ventas@ditsoicecr.com">ventas@ditsoicecr.com</a><br>Instagram: <a href="https://www.instagram.com/ditso_good">@ditso_good</a></div>
+  <div><a href="privacidad.html">Política de privacidad</a><br><a href="terminos.html">Términos del servicio</a><br>© 2026 Ditsö</div>
+</div></footer>
+</body>
+</html>
